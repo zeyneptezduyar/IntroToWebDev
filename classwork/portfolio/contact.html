@@ -17,6 +17,61 @@
             <h1>Contact</h1>
         </header>
 
+        <hr />
+        <p><a href="index.html">Home</a></p>
+        <hr />
+
+        <h2>Information Request</h2>
+        
+        <form action="submit.html" method="POST">
+            <label for="firstName">First Name:<sup><span style="color:red">* required</span></sup></label><br />
+            <input type="text" id="firstName" name="firstName" required/><br>
+            <br>
+
+            <label for="lastName">Last Name:<sup><span style="color:red">*</span></sup></label><br />
+            <input type="text" id="lastName" name="lastName" required/><br>
+            <br>
+
+            <label for="phone">Phone Number:<sup><span style="color:red">*</span></sup></label><br />
+            <input type="text" id="phone" name="phone" placeholder="(+00) 0000000000" required/><br>
+            <br>
+
+            <label for="contact">Best time to call:</label><br />
+            <select id="contact" name="contact">
+                <option value="M">Morning(08:00 to 12:00 UK Time)</option>
+                <option value="A">Afternoon(12:00 to 17:00 UK Time)</option>
+                <option value="E">Evening(17:00 to 20:00 UK Time)</option>
+            </select>
+            <br /><br />
+
+            <fieldset>
+            <legend>I am interested in (check all that apply):</legend><br />
+                <input type="checkbox" id="fe" name="dev" value="FE"/>
+                <label for="fe">Front-End Web Development</label><br />
+                <input type="checkbox" id="be" name="dev" value="BE"/>
+                <label for="be">Back-End Web Development</label><br />
+                <input type="checkbox" id="db" name="dev" value="DB"/>
+                <label for="db">Database Design</label><br />
+            </fieldset>
+            <br />
+
+            <fieldset>
+                <legend>I have filled in the client questionnaire form:<sup><span style="color:red">*</span></sup></legend><br />
+                <input type="radio" id="choice1" name="answer" value="Y" required/>
+                <label for="choice1">Yes</label><br />
+                <input type="radio" id="choice2" name="answer" value="N"/>
+                <label for="choice2">No</label><br />
+            </fieldset>
+            <br />
+            
+
+            <label for="info">Additional Information:</label><br />
+            <textarea id="info" name="info"></textarea><br />
+
+            <br />
+            <input type="submit" name="submit" value="submit">
+        </form>
+
 
         <nav>
 
