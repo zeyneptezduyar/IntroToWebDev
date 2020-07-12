@@ -24,6 +24,8 @@
         <h2>Information Request</h2>
         
         <form action="submit.html" method="POST">
+
+            <!-- text inputs -->
             <label for="firstName">First Name:<sup><span style="color:red">* required</span></sup></label><br />
             <input type="text" id="firstName" name="firstName" required/><br>
             <br>
@@ -35,7 +37,8 @@
             <label for="phone">Phone Number:<sup><span style="color:red">*</span></sup></label><br />
             <input type="text" id="phone" name="phone" placeholder="(+00) 0000000000" required/><br>
             <br>
-
+            
+            <!-- dropdown -->
             <label for="contact">Best time to call:</label><br />
             <select id="contact" name="contact">
                 <option value="M">Morning(08:00 to 12:00 UK Time)</option>
@@ -44,6 +47,7 @@
             </select>
             <br /><br />
 
+            <!-- checkbox -->
             <fieldset>
             <legend>I am interested in (check all that apply):</legend><br />
                 <input type="checkbox" id="fe" name="dev" value="FE"/>
@@ -55,6 +59,7 @@
             </fieldset>
             <br />
 
+            <!-- radiobutton -->
             <fieldset>
                 <legend>I have filled in the client questionnaire form:<sup><span style="color:red">*</span></sup></legend><br />
                 <input type="radio" id="choice1" name="answer" value="Y" required/>
@@ -64,10 +69,11 @@
             </fieldset>
             <br />
             
-
+            <!-- text area -->
             <label for="info">Additional Information:</label><br />
             <textarea id="info" name="info"></textarea><br />
 
+            <!-- submit -->
             <br />
             <input type="submit" name="submit" value="submit">
         </form>
