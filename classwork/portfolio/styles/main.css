@@ -8,6 +8,8 @@ body{
     background-color: #255E69;
     font-family: Arial, Helvetica, sans-serif;
     color: #ffff;
+    max-width: 900px; /* makes it stand in the middle (commonly between 900-1200)*/
+    margin: 0 auto;
 }
 
 header{
@@ -25,6 +27,52 @@ nav{
     border-top: 3px dashed #012C34;
     border-bottom: 3px dashed #012C34;
     margin-top: 4px;
+}
+
+nav a {
+    background-color: #012C34;
+    color: white;
+    padding: 8px;
+    border: thin solid #012C34;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    margin: 20px;
+    width: 100px;
+    float: left;
+}
+
+nav a:hover{
+    background-color: #804915;
+    color: black;
+}
+
+nav a:visited{
+    text-decoration: underline;
+}
+
+nav a:active{
+    font-weight: bold;
+}
+
+
+article{
+    margin-bottom: 16px;
+}
+
+article img {
+    float:left;
+ }
+
+ /* turn off the float settings */
+.clear-float{
+    clear: both;
+}
+
+/* for the table */
+.right-content{
+    float: left;
+    margin-left: 3%;
 }
 
 footer{
