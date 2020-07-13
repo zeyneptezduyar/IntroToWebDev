@@ -8,11 +8,39 @@
 <html lang="en">
     <head>
         <title>Zeynep's Portfolio</title>
-        <link href="styles/teststyles.css" rel="stylesheet" type="text/css" />
+        <link href="styles/main.css" rel="stylesheet" type="text/css" />
+        
         <style>
-            header{
-                background-color: darkgray;
+            caption{
+                font-weight: bold;
+                font-size: 1.2em;
+                margin-bottom: 8px;
             }
+
+            table, th, td{
+                border: 1px solid black;
+                border-collapse: collapse;
+                padding: 5px 10px;
+            }
+
+            table{
+                width: 90%;
+                margin: auto;
+            }
+
+            tr{
+                height: 30px;
+            }
+
+            th{
+                background-color: #804915;
+                color: #f2eded;
+            }
+
+            tr:nth-child(odd){
+                background-color:#6A959D;
+            }
+
         </style>
 
     </head>
@@ -23,7 +51,8 @@
         </header>     
 
         <nav>
-            <hr style="border: thin dotted blueviolet;"/>
+            <!-- <hr style="border: thin dotted blueviolet;"/> -->
+            <hr />
             <p><a href="">Home</a></p>
             <!-- internal(local) links -->
             <p><a href="projects.html">Projects</a></p>
@@ -33,7 +62,8 @@
             <p><a href="https://www.google.com" target="_blank">Google</a></p>
             <!-- bookmark link -->
             <p><a href="#target">Footer</a></p>
-            <hr style="width: 50%; border: 2px solid blueviolet;"/>
+            <!-- <hr style="width: 50%; border: 2px solid blueviolet;"/> -->
+            <hr />
         </nav>
 
         <section>
@@ -47,27 +77,33 @@
             <article id="past-experiences">
                 <h2><em>Past Experiences</em></h2>
                 <img src="images/sea.jpg" alt="" style="width:300px;"/>
-                <table border="2" width="80%">
+                <table>
                     <caption>Employment History</caption>
-                    <tr bgcolor="lightblue"> 
-                        <th>Years of Employment</th>
-                        <th>Title</th>
-                        <th>Company</th>
-                    </tr>
-                    <tr>
-                        <td>2020-present</td>
-                        <td>Co-Chair</td>
-                        <td rowspan="2">UniCS</td>
-                    </tr>
-                    <tr>
-                        <td>2019-2020</td>
-                        <td>Junior Developer</td>
-                    </tr>
-                    <tr>
-                        <td>2017-2018</td>
-                        <td>Student Intern</td>
-                        <td>Yuksel Project</td>
-                    </tr>
+                    <thead>
+                        <tr> 
+                            <th>Years of Employment</th>
+                            <th>Title</th>
+                            <th>Company</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>2020-present</td>
+                            <td>Co-Chair</td>
+                            <!-- <td rowspan="2">UniCS</td> -->
+                            <td>UniCS</td>
+                        </tr>
+                        <tr>
+                            <td>2019-2020</td>
+                            <td>Junior Developer</td>
+                            <td>UniCS</td>
+                        </tr>
+                        <tr>
+                            <td>2017-2018</td>
+                            <td>Student Intern</td>
+                            <td>Yuksel Project</td>
+                        </tr>
+                    </tbody>
                 </table>
             </article>
 
@@ -103,8 +139,8 @@
         </section>
 
         <footer>
-            <hr />
-            <p id="target">&copy; 2020 Zeynep Tezduyar. All rights reserved. &spades;</p>
+            <!-- <hr /> -->
+            <p id="target">&copy; 2020 Zeynep Tezduyar. All rights reserved &spades;</p>
         </footer>
 
     </body>

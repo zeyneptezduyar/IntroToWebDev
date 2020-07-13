@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<!--
+    Name: Zeynep Tezduyar
+    Date Created: 10.07.2020
+    Most Recent Version:
+    Purpose:
+-->
+<html lang="en">
+
+    <head>
+        <title>Contact Us</title>
+
+        <style>
+            html {
+              max-width: 500px;
+              margin: auto;
+              }
+        </style>
+
+    </head>
+
+    <body>
+
+        <header>
+            <h1>Contact Us</h1>
+        </header>
+
+        
+        <nav>
+            <hr />
+            <p><a href="index.html">Home</a>&emsp;<a href="menu.html">Menu</a>&emsp;<a href="">Contact Us</a></p>
+            <hr />
+        </nav>
+
+        <form action="submit.html" method="POST">
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name"><br />
+            <br />
+            
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email"><br />
+            <br />
+
+            <label for="phone">Phone:</label>
+            <input type="text" id="phone" name="phone"><br />
+            <br />
+
+            <label for="reason">Reason for Inquiry:</label>
+            <select id="reason" name="reason">
+                <option value="catering">Catering</option>
+                <option value="pp">Private Party</option>
+                <option value="feedback">Feedback</option>
+                <option value="other">Other</option>
+            </select>
+            <br /><br />
+
+            <label for="info">Additional Information:</label>
+            <textarea id="info" name="info" rows="4" cols="50"></textarea><br />
+            <br />
+
+            <fieldset>
+                <legend>Have you been to the restaurant:</legend>
+                    <input type="radio" id="answer1" name="answer1" value="N">
+                    <label for="answer1">No</label>
+
+                    <input type="radio" id="answer2" name="answer2" value="Y">
+                    <label for="answer2">Yes</label>
+            </fieldset>
+            <br />
+
+            <fieldset>
+                <legend>Best days to contact you:</legend>
+                <input type="checkbox" id="day1" name="day1" value="M">
+                <label for="day1">M</label>
+
+                <input type="checkbox" id="day2" name="day2" value="T">
+                <label for="day2">T</label>
+                
+                <input type="checkbox" id="day3" name="day3" value="W">
+                <label for="day3">W</label>
+
+                <input type="checkbox" id="day4" name="day4" value="Th">
+                <label for="day4">Th</label>
+
+                <input type="checkbox" id="day5" name="day4" value="F">
+                <label for="day5">F</label>
+
+            </fieldset>
+            <br />
+
+            <input type="submit" name="submit" value="Send Request"><br />
+            <br />
+
+        </form>
+
+
+        <footer>
+            <hr />
+            <p>Rusholme, Manchester, United Kingdom. M13 0JQ</p>
+            <p>+447955738948</p>
+            <hr />
+        </footer>
+
+    </body>
+</html>
