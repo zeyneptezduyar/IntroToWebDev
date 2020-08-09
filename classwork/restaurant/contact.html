@@ -10,97 +10,142 @@
     <head>
         <title>Contact Us</title>
 
+        <!-- Bootstrap CDN -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <!-- add any external styling sheet links here -->
+        <link href="styles/restaurantStyles.css" rel="stylesheet" type="text/css" />
+    
         <style>
-            html {
-              max-width: 500px;
-              margin: auto;
-              }
+            input{
+                background-color: #6e6e6e;
+            }
+
+            .btn{
+                background-color: #6e6e6e;
+                color: #fef9ff;
+            }
+
+            #name-label, #email-label, #reason-label, #day-label{ 
+                font-weight: bold;
+            }
+
+            .container{
+                max-width: 500px;
+            }
+
         </style>
 
     </head>
 
     <body>
 
-        <header>
+        <header class="jumbotron">
             <h1>Contact Us</h1>
         </header>
 
-        
         <nav>
-            <hr />
-            <p><a href="index.html">Home</a>&emsp;<a href="menu.html">Menu</a>&emsp;<a href="">Contact Us</a></p>
-            <hr />
+            <a class="btn" href="index.html">Home</a>
+            <a class="btn" href="menu.html">Menu</a>
+            <a class="btn" href="">Contact Us</a>
         </nav>
 
-        <form action="submit.html" method="POST">
-
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name"><br />
-            <br />
-            
-            <label for="email">Email:</label>
-            <input type="text" id="email" name="email"><br />
-            <br />
-
-            <label for="phone">Phone:</label>
-            <input type="text" id="phone" name="phone"><br />
-            <br />
-
-            <label for="reason">Reason for Inquiry:</label>
-            <select id="reason" name="reason">
-                <option value="catering">Catering</option>
-                <option value="pp">Private Party</option>
-                <option value="feedback">Feedback</option>
-                <option value="other">Other</option>
-            </select>
-            <br /><br />
-
-            <label for="info">Additional Information:</label>
-            <textarea id="info" name="info" rows="4" cols="50"></textarea><br />
-            <br />
-
-            <fieldset>
-                <legend>Have you been to the restaurant:</legend>
-                    <input type="radio" id="answer1" name="answer1" value="N">
-                    <label for="answer1">No</label>
-
-                    <input type="radio" id="answer2" name="answer2" value="Y">
-                    <label for="answer2">Yes</label>
-            </fieldset>
-            <br />
-
-            <fieldset>
-                <legend>Best days to contact you:</legend>
-                <input type="checkbox" id="day1" name="day1" value="M">
-                <label for="day1">M</label>
-
-                <input type="checkbox" id="day2" name="day2" value="T">
-                <label for="day2">T</label>
+    
+        <div class="container">
+            <form action="submit.html" method="POST">
+                <div class="form-group">
+                    <label id="name-label" for="name">Name:</label>
+                    <input type="text" class="form-control" id="name" name="name" placeholder="Enter name">
+                </div>
                 
-                <input type="checkbox" id="day3" name="day3" value="W">
-                <label for="day3">W</label>
+                <div class="form-group">
+                    <label id="email-label" for="email">Email:</label>
+                    <input type="text" class="form-control" id="email" name="email" placeholder="Enter email">
+                </div>
 
-                <input type="checkbox" id="day4" name="day4" value="Th">
-                <label for="day4">Th</label>
+                <div class="form-group">
+                    <label for="phone">Phone:</label>
+                    <input type="text" class="form-control" id="phone" name="phone" placeholder="Enter phone">
+                </div>
 
-                <input type="checkbox" id="day5" name="day4" value="F">
-                <label for="day5">F</label>
+                <div class="form-group">
+                    <label id="reason-label" for="reason">Reason for Inquiry:</label>
+                    <select id="reason" class="form-control" name="reason">
+                        <option value="catering">Catering</option>
+                        <option value="pp">Private Party</option>
+                        <option value="feedback">Feedback</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
 
-            </fieldset>
-            <br />
+                <div class="form-group">
+                    <label for="info">Additional Information:</label>
+                    <textarea class="form-control" id="info" name="info" rows="3"></textarea>
+                </div>
 
-            <input type="submit" name="submit" value="Send Request"><br />
-            <br />
+                <fieldset class="form-group">
+                    <div class="row">
+                        <legend class="col-form-label col-sm pt-0">Have you been to the restaurant:</legend>
+                        <div class="col-sm-10">
 
-        </form>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" id="answer1" name="gridRadios" value="N">
+                                <label class="form-check-label" for="answer1">No</label>
+                            </div>
+
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" id="answer2" name="gridRadios" value="Y">
+                                <label class="form-check-label" for="answer2">Yes</label>
+                            </div>
+
+                        </div>
+                    </div>
+                </fieldset>
+
+                <label id="day-label">Best day(s) to contact you:</legend>
+                <fieldset class="form-group">
+                    <div class="form-check form-check-inline">
+                        
+                        <input class="form-check-input" type="checkbox" id="day1" name="day1" value="M">
+                        <label class="form-check-label" for="day1">M</label>
+                    </div>
+
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="day2" name="day2" value="T">
+                        <label class="form-check-label" for="day2">T</label>
+                    </div>
+
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="day3" name="day3" value="W">
+                        <label class="form-check-label" for="day3">W</label>
+                    </div>
+
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="day4" name="day4" value="Th">
+                        <label class="form-check-label" for="day4">Th</label>
+                    </div>
+
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="day5" name="day4" value="F">
+                        <label class="form-check-label" for="day5">F</label>
+                    </div>
+                </fieldset>
+
+                <input class="btn" type="submit" name="submit" value="Send Request"><br />
+                <br />
+
+            </form>
+        </div>
 
 
-        <footer>
-            <hr />
+        <footer class="jumbotron">
             <p>Rusholme, Manchester, United Kingdom. M13 0JQ</p>
             <p>+447955738948</p>
-            <hr />
         </footer>
 
+        <!-- Adding the JS scripts here speeds up the loading time so that the user can see and start to use the HTML content while the browser is loading the JS files in the background -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
     </body>
 </html>

@@ -10,42 +10,55 @@
     <head>
         <title>Home Page</title>
 
-        <style>
-            html:not(hr) {
-              max-width: 500px;
-              margin: auto;
-            }
-        </style>
+        <!-- Bootstrap CDN -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <!-- add any external styling sheet links here -->
+        <link href="styles/restaurantStyles.css" rel="stylesheet" type="text/css" />
 
+        <style>
+
+            .container{
+                max-width: 500px;
+            }
+            
+        </style>
     </head>
 
     <body>
         <div class="content">
 
-            <header>
+            <header class="jumbotron">
                 <h1>The Restaurant: Grab a Byte</h1>
             </header>
+
             <nav>
-                <hr />
-                <p><a href="">Home</a>&emsp;<a href="menu.html">Menu</a>&emsp;<a href="contact.html">Contact Us</a></p>
-                <hr />
+                <a class="btn" href="">Home</a>
+                <a class="btn" href="menu.html">Menu</a>
+                <a class="btn" href="contact.html">Contact Us</a>
             </nav>
 
-            <img src="images/food.jpg" width="485px" height="250px">
+            <div class="container">
 
-            <p><strong><em>Restaurant Description</em></strong></p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tempor nisi bibendum tortor faucibus convallis. Vivamus pretium condimentum aliquet. Sed sollicitudin lacus eget felis rutrum consectetur. Morbi vulputate sollicitudin posuere. Vestibulum varius ullamcorper ante, eget molestie tellus vulputate ac. Aenean ex ante, mollis molestie placerat vitae, pellentesque ut dui. Maecenas faucibus diam libero, non mollis turpis vulputate eu. Suspendisse sit amet arcu sed velit varius aliquet. Phasellus sit amet arcu at erat mollis finibus. Nulla purus leo, lobortis eu odio quis, pharetra ullamcorper odio. Curabitur consectetur dignissim luctus. Nulla eu vehicula ante. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin venenatis massa eget interdum mollis.</p>
+                <img src="images/food.jpg" class="img-fluid rounded">
 
-            <br />
-            <h3>Read a recent review!</h3>
-            <p><a href="">4-star taste,</a><a href=""> 1-start price</a></p>
+                <p><strong><em>Restaurant Description</em></strong></p>
+                <p id="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tempor nisi bibendum tortor faucibus convallis. Vivamus pretium condimentum aliquet. Sed sollicitudin lacus eget felis rutrum consectetur. Morbi vulputate sollicitudin posuere. Vestibulum varius ullamcorper ante, eget molestie tellus vulputate ac. Aenean ex ante, mollis molestie placerat vitae, pellentesque ut dui. Maecenas faucibus diam libero, non mollis turpis vulputate eu. Suspendisse sit amet arcu sed velit varius aliquet. Phasellus sit amet arcu at erat mollis finibus. Nulla purus leo, lobortis eu odio quis, pharetra ullamcorper odio. Curabitur consectetur dignissim luctus. Nulla eu vehicula ante. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin venenatis massa eget interdum mollis.</p>
 
-            <footer>
-                <hr />
+                <br />
+                <h3>Read a recent review!</h3>
+                <p><a href="">4-star taste</a>, <a href="">1-start price</a></p>
+
+            </div>
+
+            <footer class="jumbotron">
                 <p>Rusholme, Manchester, United Kingdom. M13 0JQ</p>
                 <p>+447955738948</p>
-                <hr />
             </footer>
         </div>
+
+        <!-- Adding the JS scripts here speeds up the loading time so that the user can see and start to use the HTML content while the browser is loading the JS files in the background -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     </body>
 </html>
