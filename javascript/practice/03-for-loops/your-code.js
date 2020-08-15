@@ -21,8 +21,9 @@ for (var n = 1; n <= 7; n++) {
 // Print each number to the JavaScript console.
 console.log("FOR ONE TO TEN");
 // Write your code here:
-
-
+for (var i = 1; i <= 10; i++){
+    console.log(i);
+}
 
 // 2. COUNT BY TWOS FROM TWO TO TWELVE
 // ===================================
@@ -39,7 +40,9 @@ console.log("FOR ONE TO TEN");
 // 12
 console.log("COUNT BY TWOS FROM TWO TO TWELVE");
 // Write your code here:
-
+for (var i = 2; i <= 12; i += 2){
+    console.log(i);
+}
 
 
 // 3. COUNT BACKWARD FROM SIX
@@ -58,14 +61,16 @@ console.log("COUNT BY TWOS FROM TWO TO TWELVE");
 // 0
 console.log("COUNT BACKWARD FROM SIX");
 // Write your code here:
-
+for (var i = 6; i >= 0; i--){
+    console.log(i);
+}
 
 
 // 4. SUM EVENS
 // ============
 // You're given two variables with numeric values:
 
-var limit = 10; // We stop looping when we reach this number.
+var limit = 8; // We stop looping when we reach this number.
 var sum = 0;    // We add even numbers to this variable.
 
 // Write a for loop that loops from 0 to limit.
@@ -78,13 +83,19 @@ var sum = 0;    // We add even numbers to this variable.
 console.log("SUM EVENS");
 // Write your code here:
 
+for (var i = 0; i <= limit; i++){
+    if (i % 2 == 0){
+        sum += i;
+    }
+}
+
 console.log("limit = %s, sum = %s", limit, sum);
 
 // 5. FIND A FAVORITE NUMBER
 // =========================
 // You're given two variables with numeric values:
 
-var winniesFavoriteNumber = 53; // Winnie's favorite number
+var winniesFavoriteNumber = 98; // Winnie's favorite number
 var kaisFavoriteNumber = 44;    // Kai's favorite number
 
 // Write a for loop that loops until it reaches either winniesFavoriteNumber 
@@ -94,13 +105,55 @@ var kaisFavoriteNumber = 44;    // Kai's favorite number
 // Try adding a third, or forth, or fifth favorite number!
 console.log("FIND A FAVORITE NUMBER");
 // Write your code here:
-
+for (var i = 0; i <= winniesFavoriteNumber || i <= kaisFavoriteNumber; i++){
+    if (winniesFavoriteNumber > kaisFavoriteNumber){
+        console.log(kaisFavoriteNumber);
+    }else if (kaisFavoriteNumber > winniesFavoriteNumber){
+        console.log(winniesFavoriteNumber);
+    }else{
+        console.log(kaisFavoriteNumber);
+        console.log(winniesFavoriteNumber);
+    }
+}
 
 
 // CHALLENGE: WHILE LOOPS
 // ======================
 // Try solving the five tasks above with a while loop in place of a for loop.
 
+console.log("WHILE ONE TO TEN");
+
+var loopCount = 1;
+while (loopCount <= 10){
+    console.log(loopCount);
+    loopCount ++
+}
+
+
+//
+//
+
+console.log("COUNT BY TWOS FROM TWO TO TWELVE");
+
+var loopCount = 2;
+while (loopCount <= 12){
+    console.log(loopCount);
+    loopCount += 2;
+}
+
+//
+//
+
+console.log("COUNT BACKWARD FROM SIX");
+
+var loopCount = 6;
+while (loopCount >= 0){
+    console.log(loopCount);
+    loopCount --
+}
+
+//
+//
 
 
 
