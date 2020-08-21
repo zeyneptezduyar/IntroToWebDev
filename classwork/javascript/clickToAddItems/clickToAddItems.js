@@ -15,6 +15,8 @@ function validate(){
         return false;
     }
 
+    console.log(num1);
+
     var operand1 = parseInt(num1.value, 10);
     var operand2 = parseInt(num2.value, 10);
 

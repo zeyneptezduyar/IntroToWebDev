@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sample</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    </head>
+
+    <body>
+        <div class="container">
+           
+            <h1>Sample</h1>
+
+            <form name="rangeFun" class="needs-validation" onsubmit="return validate();" novalidate>
+                
+                <div class="form-row">
+                    <div class="form-group col">
+                        <label for="startNum">Starting Number</label>
+                        <input type="number" class="form-control" id="startNum" required>
+                        <div class="invalid-feedback">Starting Number is required and must be a number.</div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col">
+                        <label for="endNum">Ending Number</label>
+                        <input type="number" class="form-control" id="endNum" required>
+                        <div class="invalid-feedback">Ending Number is required and must be a number.</div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col">
+                        <label for="stepNum">Step</label>
+                        <input type="number" class="form-control" id="stepNum" required>
+                        <div class="invalid-feedback">Step is required and must be a number.</div>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group col">
+                        <button type="submit" id="submitButton" class="btn btn-primary">Display Evens</button>
+                    </div>
+                </div>
+
+            </form>
+
+            <div class="container">
+                <h6 id="textResult" style="display:none">Here are the even numbers between <span id="startDisplay"></span> and <span id="endDisplay"></span> by <span id="stepDisplay"></span>'s:</h6>
+                <h6><span id="results"></span></h6>
+            </div>
+
+        </div>
+        
+        <script src="code-practice.js"></script>
+    </body>
+
+</html>
