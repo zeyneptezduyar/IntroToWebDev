@@ -37,15 +37,73 @@
             <div class="row">
                 <div class="col-lg-3 col-md">
                     <!-- div for the image -->
-                    <img src="portfolio/images/zeynep.jpg" alt="Photo of Zeynep Tezduyar" class="img-fluid" />
+                    <img src="../portfolio/images/zeynep.jpg" alt="Photo of Zeynep Tezduyar" class="img-fluid" />
                 </div>
 
                 <div class="col-lg-9 col-md">
                     <!-- div for the text -->
                     <p>Pellentesque finibus vehicula scelerisque. Morbi eget quam aliquet, vehicula felis vitae, semper odio. Curabitur turpis lectus, ultricies vel nisi vulputate, porta congue sapien. Proin facilisis ipsum at lorem scelerisque tincidunt.</p>
-        <p>Proin convallis orci at venenatis euismod. In rhoncus ligula non nibh pellentesque rutrum. Nunc vel mauris diam.</p>
+                    <p>Proin convallis orci at venenatis euismod. In rhoncus ligula non nibh pellentesque rutrum. Nunc vel mauris diam.</p>
                 </div>
             </div>
+
+            <!-- FIRST CARD -->
+
+            <div class="accordion" id="accordionExample">
+                <!-- A Bootstrap card is a small block with at least two sections: a header for the card's title and a body-type element for the card's contents. -->
+                <div class="card">
+                    <div class="card-header" id="portfolio01">
+                        <h5 class="mb-0"> <!-- formats the title to have no space in the bottom margin -->
+                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">My First Portfolio Piece</button>
+                            <!-- Accessible Rich Internet Applications (ARIA) design to make webpage more accessible to people with disabilities -->
+                        </h5>
+                    </div>
+                <!-- class="collapse show" -- to show the div when the webpage is open -->
+                <!-- this is designated as a child of #accordionExample, the id assigned to accordion itself -->
+                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                        <div class="card-body">
+                            <p><a href="" taget="_blank">Project 1</a></p>
+                            <!-- <figure><img src="../portfolio/images/sea.jpg" alt="Picture of sea"></img></figure> -->
+                        </div>
+                    </div>
+                </div> <!-- end of .card div -->
+
+            <!-- SECOND CARD -->
+                <div class="card">
+                    <div class="card-header" id="portfolio02">
+                        <h5 class="mb-0"> <!-- formats the title to have no space in the bottom margin -->
+                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">My Second Portfolio Piece</button>
+                            <!-- Accessible Rich Internet Applications (ARIA) design to make webpage more accessible to people with disabilities -->
+                        </h5>
+                    </div>
+                <!-- class="collapse show" -- to show the div when the webpage is open -->
+                <!-- this is designated as a child of #accordionExample, the id assigned to accordion itself -->
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                        <div class="card-body">
+                            <p><a href="" taget="_blank">Project 2</a></p>
+                        </div>
+                    </div>
+                </div> <!-- end of .card div -->
+
+            <!-- THIRD CARD -->
+                <div class="card">
+                    <div class="card-header" id="portfolio03">
+                        <h5 class="mb-0"> <!-- formats the title to have no space in the bottom margin -->
+                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">My Third Portfolio Piece</button>
+                            <!-- Accessible Rich Internet Applications (ARIA) design to make webpage more accessible to people with disabilities -->
+                        </h5>
+                    </div>
+
+                <!-- class="collapse show" -- to show the div when the webpage is open -->
+                <!-- this is designated as a child of #accordionExample, the id assigned to accordion itself -->
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                        <div class="card-body">
+                            <p><a href="" taget="_blank">Project 3</a></p>
+                        </div>
+                    </div>
+                </div> <!-- end of .card div -->
+            </div> <!-- end of .accordian div -->
+
         </div>
 
         <!-- Adding the JS scripts here speeds up the loading time so that the user can see and start to use the HTML content while the browser is loading the JS files in the background -->

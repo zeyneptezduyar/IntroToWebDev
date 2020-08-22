@@ -10,11 +10,27 @@ nav {
     margin-bottom: 12px;
 }
 
-nav .btn{
+nav .btn {
     background-color: #5b7d87;
     color: #fef9ff;
 }
 
-nav .btn:hover{
+nav .btn:hover {
     font-weight: bold;
+}
+
+.card-body {
+    background-color: #5b7d87;
+}
+
+.card-body a{
+    color: #fef9ff;
+}
+
+.card-header .btn{
+    color: #5b7d87;
+}
+
+.accordion {
+    padding-top: 10px;
 }
