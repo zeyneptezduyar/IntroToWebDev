@@ -37,24 +37,34 @@
 
     </head>
 
-    <body>
+    <body onload="checkJavaScriptValidity()">
 
         <header class="jumbotron">
             <h1>Contact Us</h1>
         </header>
 
+        <div id="Disabled">
+            <small>Browser JavaScript is disabled. Please Check the Browser Setting.</small>
+        </div>
+
         <nav>
-            <a class="btn" href="index.html">Home</a>
+            <a class="btn" href="index.html">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="20" height="20" style="padding-bottom: 2px">
+                    <path fill-rule="evenodd" d="M8.156 1.835a.25.25 0 00-.312 0l-5.25 4.2a.25.25 0 00-.094.196v7.019c0 .138.112.25.25.25H5.5V8.25a.75.75 0 01.75-.75h3.5a.75.75 0 01.75.75v5.25h2.75a.25.25 0 00.25-.25V6.23a.25.25 0 00-.094-.195l-5.25-4.2zM6.906.664a1.75 1.75 0 012.187 0l5.25 4.2c.415.332.657.835.657 1.367v7.019A1.75 1.75 0 0113.25 15h-3.5a.75.75 0 01-.75-.75V9H7v5.25a.75.75 0 01-.75.75h-3.5A1.75 1.75 0 011 13.25V6.23c0-.531.242-1.034.657-1.366l5.25-4.2h-.001z"></path>
+                </svg>
+                Home
+            </a>
             <a class="btn" href="menu.html">Menu</a>
-            <a class="btn" href="">Contact Us</a>
+            <a class="btn" href="" style="background-color: #444343;">Contact Us</a>
         </nav>
 
     
         <div class="container">
-            <form action="submit.html" method="POST">
+            <form name="contactForm" class="needs-validation" onsubmit="return validate();" onreset="resetView();" novalidate>
+            <!-- <form action="submit.html" method="POST"> -->
                 <div class="form-group">
                     <label id="name-label" for="name">Name:</label>
-                    <input type="text" class="form-control" id="name" name="name" placeholder="Enter name">
+                    <input type="text" class="form-control" id="Name" name="name" placeholder="Enter name">
                 </div>
                 
                 <div class="form-group">
@@ -130,12 +140,12 @@
                     </div>
                 </fieldset>
 
-                <input class="btn" type="submit" name="submit" value="Send Request"><br />
+                <input class="btn" type="submit" name="submit" value="Send Request" >
+                <input id="resetBtn" class="btn" type="reset" name="reset" value="Reset"><br />
                 <br />
 
             </form>
         </div>
-
 
         <footer class="jumbotron">
             <p>Rusholme, Manchester, United Kingdom. M13 0JQ</p>
@@ -146,6 +156,8 @@
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript" src="js/contact.js"></script>
+
     </body>
 </html>

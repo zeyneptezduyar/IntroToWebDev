@@ -7,7 +7,7 @@ body:not(hr) {
 .jumbotron{
     background-color: #6e6e6e;
     margin-top: 12px;
-    margin-bottom: 12px;
+    margin-bottom: -5px;
     padding: 20px 3px 20px 3px;
     text-align: center;
 }
