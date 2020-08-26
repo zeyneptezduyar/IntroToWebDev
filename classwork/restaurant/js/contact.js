@@ -8,9 +8,9 @@
 
 var contactForm = document.forms["contactForm"];
 
-var Name = document.getElementById("Name").value;
-var email = document.getElementById("email").value;
-var phone = document.getElementById("phone").value;
+var Name = document.getElementById("Name");
+var email = document.getElementById("email");
+var phone = document.getElementById("phone");
 
 function validate(){
     contactForm.className = "needs-validation";
@@ -21,7 +21,11 @@ function validate(){
         return false;
     }
 
-    if (Name == "" || email == "" || phone == "") {
+    var a = Name.value;
+    var b = email.value;
+    var c = phone.value;
+
+    if (a == "" || b == "" || c == "") {
         alert("Please fill all the required fields!");
         return false;
     }
