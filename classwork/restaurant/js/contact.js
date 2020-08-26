@@ -1,4 +1,11 @@
 
+/*
+    Name: Zeynep Tezduyar
+    Date Created: 24 August 2020
+    Most Recent Version: 26 August 2020
+    Purpose: Java Script for Contact Page
+*/
+
 var contactForm = document.forms["contactForm"];
 
 var Name = document.getElementById("Name").value;
